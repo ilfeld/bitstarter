@@ -2,15 +2,15 @@ buf = new Buffer(256);
 var fs = require('fs');
 var express = require('express');
 var app = express.createServer(express.logger());
-fs.readFile('index.html', function (err, data) {
-  if (err) throw err;
-  var m=console.log(data);
-  //lol=buffer.toString("utf-8");
-});
+
+var content= fs.readFileSync("index.html");
+
+
+
 mes="please believe me, because I believe you"
 
 app.get('/', function(request, response) {
-  response.send(mes);
+  response.send(content);
 });
 
 var port = process.env.PORT || 5000;
