@@ -4,10 +4,10 @@ var express = require('express');
 var app = express.createServer(express.logger());
 fs.readFile('index.html', function (err, data) {
   if (err) throw err;
-  console.log(data);
+  var m=console.log(data);
   //lol=buffer.toString("utf-8");
 });
-mes="please believe me"
+mes="please believe me, because I believe you"
 
 app.get('/', function(request, response) {
   response.send(mes);
