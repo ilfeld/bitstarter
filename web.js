@@ -3,9 +3,9 @@ var fs = require('fs');
 var express = require('express');
 var app = express.createServer(express.logger());
 
-var content= fs.readFileSync("index.html");
-buffer.write(content);
-var decode= buffer.toString('utf-8');
+var content= fs.readFileSync("index.html",'utf-8');
+//buffer.write(content);
+//var decode= buffer.toString('utf-8');
 
 
 mes="please believe me, because I believe you"
