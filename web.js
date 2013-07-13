@@ -4,7 +4,7 @@ var m= fs.readFileSync(index.html)
 var lol=buffer.toString("utf-8", 0, 12)
 
 app.get('/', function(request, response) {
-  response.send(lol);
+  response.send('wtf');
 });
 
 var port = process.env.PORT || 5000;
