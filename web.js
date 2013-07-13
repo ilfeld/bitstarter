@@ -1,10 +1,11 @@
-buf = new Buffer(256);
+buffer = new Buffer(256);
 var fs = require('fs');
 var express = require('express');
 var app = express.createServer(express.logger());
 
 var content= fs.readFileSync("index.html");
-
+buffer.write(content);
+var decode= buffer.toString('utf-8');
 
 
 mes="please believe me, because I believe you"
