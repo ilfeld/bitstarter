@@ -5,8 +5,8 @@ var app = express.createServer(express.logger());
 fs.readFile('index.html', function (err, data) {
   if (err) throw err;
   console.log(data);
+  lol=buffer.toString("utf-8");
 });
-//lol=buffer.toString("utf-8", 0, 12)
 mes="please"
 
 app.get('/', function(request, response) {
