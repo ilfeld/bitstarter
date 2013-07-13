@@ -1,6 +1,6 @@
 var express = require('express');
 var app = express.createServer(express.logger());
-//yowza=fs.readFileSync(index.html)
+yowza=fs.readFileSync(index.html)
 //lol=buffer.toString("utf-8", 0, 12)
 mes="please"
 
